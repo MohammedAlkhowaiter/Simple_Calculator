@@ -1,0 +1,159 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.1415
+
+int main()
+{
+    
+ char op;
+ 
+ float apow;
+
+ float a ; 
+ float b ;
+ double result;
+ 
+ 
+ printf("Enter a operation (+,-,*,/ , s , r , c , n , x , y, z ): ");
+ scanf("%c", &op);
+ 
+ 
+ /*
+    s = squre 
+    r = squre root 
+    c = cube 
+    n = nth root 
+    x = sin 
+    y = cos 
+    z = tan
+    */
+
+ 
+
+ switch(op)
+ {
+   
+ case '+':
+ 
+  printf( "Enter two numbers for calculation:");
+ scanf("%f%f", &a , &b );
+ 
+ printf("Adding = %f\n", a + b );
+ break;
+
+
+ case '-':
+ 
+  printf( "Enter two numbers for calculation:");
+ scanf("%f%f", &a , &b );
+ 
+ printf("Subtracting = %f\n", a - b);
+ break;
+ 
+ 
+case '*':
+
+ printf( "Enter two numbers for calculation:");
+ scanf("%f%f", &a , &b );
+
+ printf("Multi = %f\n", a * b);
+ break; 
+ 
+ 
+ case '/':
+ 
+  printf( "Enter two numbers for calculation:");
+ scanf("%f%f", &a , &b );
+ 
+ printf("devid = %f\n", a / b);
+ break;
+ 
+ 
+
+ 
+
+ case 's':
+ 
+  printf( "Enter number for calculation:");
+ scanf("%f", &a );
+ 
+ printf("squre = %f\n" ,  apow = ( a * a ) );
+ break;
+ 
+
+
+ case 'r':
+ 
+  printf( "Enter number for calculation:");
+ scanf("%f", &a );
+ 
+ printf("sqrt = %f\n" ,   sqrt (a) );
+ break;
+ 
+ 
+ 
+  case 'c':
+  
+   printf( "Enter number for calculation:");
+ scanf("%f", &a );
+  
+ printf(" cube = %f\n" ,  apow = ( a * a * a ) );
+ break;
+ 
+ 
+ 
+ 
+  case 'n':
+  
+  
+   printf( "Enter number for calculation:");
+ scanf("%f", &a );
+  
+  printf(" nth cube = %f\n" , pow(a , 1.0/3.0 ) );
+ break;
+ 
+ 
+ 
+ case 'x':
+ 
+ 
+  printf( "Enter number for calculation:");
+ scanf("%f", &a );
+ 
+  result = sin (a*PI/180);
+  printf ("The sin of %f degrees is %f.\n", a , result);
+  break;
+  
+  
+  case 'y':
+  
+  
+   printf( "Enter number for calculation:");
+ scanf("%f", &a );
+ 
+  result = cos (a*PI/180);
+  printf ("The cos of %f degrees is %f.\n", a , result);
+  break;
+  
+  
+  
+  case 'z':
+  
+  
+ printf( "Enter number for calculation:");
+ scanf("%f", &a );
+ 
+  result = tan (a*PI/180);
+  printf ("The tan of %f degrees is %f.\n", a , result);
+  break;
+  
+  
+ 
+ 
+ 
+ 
+ default:
+ printf("The operation is not valid.\n");
+ }
+ return 0;
+}
